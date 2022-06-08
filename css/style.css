@@ -249,7 +249,7 @@ body{
 }
 .sectionThree-title{
     letter-spacing: 10px;
-    font-size: 70px;
+    font-size: 55px;
     color: white;
     margin: 50px auto 80px auto;
     text-shadow: 0px 5px 30px #FFFFFF;
@@ -264,6 +264,9 @@ body{
     text-shadow: 0px 5px 30px #FFFFFF;
     text-align: center;
     font-family: 'Dancing Script';
+}
+.section-four{
+    margin-top: 150px;
 }
 .section-post-title{
     letter-spacing: 10px;
