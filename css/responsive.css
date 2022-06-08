@@ -94,6 +94,7 @@
     .footer-block{
         display: flex;
         flex-direction: column;
+        padding: 20px;
     }
     .footer-right-block{
         flex-direction: column;
