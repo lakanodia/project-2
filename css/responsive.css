@@ -152,9 +152,18 @@
     .sectionTwo-title{
         left: 22%;
     }
-    .slider-content{
-        background-position: 50% 50%;
+    .stock-info{
+        flex-direction: column;
+        justify-content: center;
     }
+    .stock-li{
+        display: flex;
+        
+    }
+    .stock-text{
+        margin-right: 5px;
+    }
+
 }
 
 
@@ -194,8 +203,7 @@
         padding: 10px 0px;
     }
     .burger-child.middle{
-        display: none;
-        
+        display: none;  
     }
     .burger-child.top{
         transform: rotate(-45deg) translate(-8px, 2px);

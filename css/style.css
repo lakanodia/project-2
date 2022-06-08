@@ -4,11 +4,11 @@ body{
     background: linear-gradient(0deg, rgba(28,45,94,1) 0%, rgba(15,12,53,1) 100%);
 }
 .style{
-    text-shadow: 0px 3px 10px #6d8fff;
-    color:  #6d8fff;
+    text-shadow: 0px 3px 10px #00d0ff;
+    color: #00d0ff;
     font-size: 55px;
 }
-
+/* Header navigation */
 .logo-icon{
     width: 45px;
 }
@@ -27,6 +27,61 @@ body{
     transition: all ease-out .5s;
     font-family: 'Comfortaa';
 }
+
+.nav-a{
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #00d0ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.nav-a:hover{
+    background: #00d0ff;
+    color:#ffffff;
+    box-shadow: 0 0 50px  #00d0ff;
+    transition-delay: 0.5s;
+}
+.nav-a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid  #00d0ff;
+    border-left: 2px solid  #00d0ff;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.nav-a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid  #00d0ff;
+    border-right: 2px solid  #00d0ff;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.nav-a:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+.nav-a:hover:after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+
 .nav-ul{
     display: flex;  
     transition: 0.5s;
@@ -44,9 +99,8 @@ body{
     border-radius: 15px;
     transition: background-color 0.5s ease-out;
 }
-.nav-a{
-    color: #FFFFFF;
-}
+
+/* Banner Background Image */
 .banner-div{
     background-image: url('../img/Image-1.png');
     max-width: 80vh;
@@ -71,7 +125,6 @@ body{
     text-align: center;
 }
 
-
 /* accourdion */
 .title{
     max-width: 500px;
@@ -81,7 +134,6 @@ body{
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-
 }
 
 .accordion-div{
@@ -124,7 +176,6 @@ body{
     font-size: 30px;
     font-weight: 900;
 }
-
 .accordion-title{
     position: relative;
     padding: 20px;
@@ -132,7 +183,6 @@ body{
     color: rgb(255, 255, 255);
     font-weight: 900;
 }
-
 .accordion-title::before{
     font-family: FontAwesome;
     content: '\f107';
@@ -152,7 +202,7 @@ body{
     margin-bottom: 150px;
 }
 
-/* section two - crypto */
+/* section two - information about crypto */
 .sectionTwo-title{
     letter-spacing: 10px;
     font-size: 70px;
@@ -242,6 +292,8 @@ body{
     font-weight: 900;
     text-shadow: 0px 0px 15px rgb(152, 216, 255);
 }
+
+
 .view-div{
     border: 15px 15px 15px white;
     cursor: pointer;
@@ -278,7 +330,8 @@ body{
     opacity: 100%;
 
 }
-/* section three */
+
+/* section three information abouts stocks */
 
 .section-three{
     margin-top: 100px;
@@ -309,20 +362,6 @@ body{
     transition: 0.5s;
 }
 .stock-block:hover{
-    /* background-image: linear-gradient(
-        310deg,
-        hsl(226deg 100% 5%) 0%,
-        hsl(225deg 48% 11%) 11%,
-        hsl(227deg 42% 17%) 21%,
-        hsl(229deg 39% 23%) 31%,
-        hsl(230deg 38% 29%) 41%,
-        hsl(231deg 36% 36%) 51%,
-        hsl(230deg 38% 29%) 61%,
-        hsl(229deg 39% 23%) 71%,
-        hsl(227deg 42% 17%) 80%,
-        hsl(225deg 48% 11%) 90%,
-        hsl(226deg 100% 5%) 100%
-      ); */
     box-shadow: 0px 5px 30px rgb(95, 116, 235);
 }
 .stock-title{
@@ -350,9 +389,6 @@ body{
     animation: spin 5s ;
 }
 
-/* @keyframes spin {
-    50% {transform: rotate(180deg);}
-} */
 .chart-container{
     max-width: 1200px;
     width: 100%;
@@ -453,38 +489,13 @@ body{
 .text-nft{
     color: white;
     text-align: center;
-    /* text-overflow: ellipsis; */
-    /* overflow: hidden; */
     font-size: 10px;
     margin-top: 15px;
 }
 
-.creators-block{
-    max-width: 1000px;
-    margin: 60px auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.creators-div{
-    max-width: 430px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    border-radius: 7px;
-    box-shadow: 0px 3px 35px rgb(0, 238, 255);
-    background-color:  rgb(49, 48, 48);
-    opacity: 70%;
-    margin-bottom: 50px;
-}
 .creators-img{
     width: 100%;
-    height: 360px;
+    height: 570px;
     object-fit: cover;
     border-radius: 8px;
     transform: scale(0.95);
@@ -506,30 +517,6 @@ body{
 .creators-title{
     font-weight: 900;
 }
-
-
-/* .nft-img{
-    max-width: 70vh;
-    width: 100%;
-    display: flex;
-    object-fit: contain;
-    flex-direction: column;
-    position: relative;
-    animation: mymove 5s;
-    animation-fill-mode: forwards;
-    opacity: 50%;
-}
-
-#nft1 {animation-timing-function: linear;}
-#nft2 {animation-timing-function: ease;}
-#nft3 {animation-timing-function: ease-in;}
-#nft4 {animation-timing-function: ease-out;}
-#nft5 {animation-timing-function: ease-in-out;}
-
-@keyframes mymove {
-  from {left: 0px;}
-  to {left: 500px;}
-} */
 
 /* style slider */
 .slider-block{
@@ -559,11 +546,18 @@ body{
     font-weight: 800;
     border-radius: 15px;
     background-color: #3c3c3c00;
-    color:  #000a3a;
+    color:  #080808c2;
     border: none;
     font-size: 50px;
     cursor: pointer;
     transition: background-color 0.5s ease-out;
+    transform: scale(1.0);
+
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+    color:  #080808d0;
 }
 .right{
     right: 15%; 
@@ -612,15 +606,13 @@ body{
     z-index: 2;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 25%;
+    bottom: 15%;
     cursor: pointer;
 }
 .dot.active {
-    background: linear-gradient(to top right, #001455f6 0%, #33bbffbc 100%);
+    background: linear-gradient(to top right, #000105f6 0%, #252626bc 100%);
     opacity: 100%;
 }
-
-
 
 /* posts */
 
@@ -635,9 +627,11 @@ body{
     flex-direction: column;
     text-align: center;
     color: rgb(255, 255, 255);
-    border-radius: 7px;
-    background-color: #81b7f6;
+    border-radius: 81% 19% 81% 19% / 5% 100% 5% 100%;
+    background:  #2980b9;
+    background: linear-gradient(90deg, rgb(0, 166, 128) 0%, rgb(0, 157, 255) 87%);
     opacity: 70%;
+    padding: 15px;
     margin-bottom: 20px; 
     transition: 0.5s;
 }
@@ -693,23 +687,26 @@ body{
 }
 
 .title{
-    font-size: 22px;
+    font-size: 25px;
     margin-top: 5px;
+    font-weight: 900;
 }
+
 /*style post card that opens after click */
 .post-card{
     position: fixed;
     top: 20%;
     left: 0;
     right: 0;
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
-    height: 450px;
-    background-color: #ffffffeb;
-    border-radius: 7px;
-    box-shadow: 0px 0px 30px rgb(49, 9, 5);
+    height: 350px;
+    background: linear-gradient(90deg, rgb(248, 201, 255) 0%, rgb(180, 226, 255) 87%);
+    border-radius: 81% 19% 81% 19% / 5% 100% 5% 100%;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
     margin: 0 auto;
     display: none;
+    padding: 40px;
     z-index: 15;
 }
 .post-content{
@@ -723,10 +720,10 @@ body{
 }
 .close-icon{
     position: absolute;
-    top: 1.5%;
-    right: 3%;
+    top: 5%;
+    right: 18%;
     font-size: 25px;
-    color: rgb(116, 115, 115);
+    color: rgb(44, 42, 42);
     cursor: pointer;
 }
 .post-title{
@@ -746,8 +743,7 @@ body{
 }
 
 
-
-/* Form */
+/* Form style */
 .mainForm{
     max-width: 700px;
     width: 100%;
@@ -794,21 +790,20 @@ body{
 .saveButton:hover{
     background-color: #06acff;
 }
-
 .form-title{
     font-weight: 900;
     margin-bottom: 15px;
     text-align: center;
 }
-
 .scroll{
     background-color: rgba(34,34,34,0.8);
 }
+
 /* burger bar */
 .burger-child{
     width: 40px;
     height: 5px;
-    background-color: #6d8fff;
+    background-color: #00d0ff;
     margin-top: 7px;
     border-radius: 7px;
     transition: 0.5s linear;
@@ -938,3 +933,68 @@ body{
 .google{
     background-color: #DC4E41;
 }
+
+/* flip-card */
+.creators-block{
+    max-width: 1000px;
+    margin: 60px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flip-card {
+    background-color: transparent;
+    max-width: 450px;
+    height: 700px;
+    width: 100%;
+    margin-bottom: 60px;
+    
+  }
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    box-shadow: rgb(0 238 255) 0px 3px 35px;
+    background-color: rgba(64, 63, 64, 0.471);
+    border-radius: 7px;
+    color: white;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: rotateY(180deg);
+    letter-spacing: 3px;
+    line-height: 40px;
+  }
+
+
+
+
+

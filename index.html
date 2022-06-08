@@ -13,7 +13,7 @@
     <meta property="og:title" content="Money Investment"/>
     <meta property="og:description" content="Women In Tech - Final Project"/>
     <meta property="og:image" content="img/currency.png"/>
-    <link rel="icon" type="text/css" href="img/icon-1.png">
+    <link rel="icon" type="text/css" href="img/Image-1.png">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,7 +26,6 @@
             <div class="logo-div">
                 <a class="logo-link" href="index.html" id="logo-link">
                     <i class="fa-brands fa-bitcoin style"></i>
-                    <!-- <img class="logo-icon" src="img/logo3.png" alt="logo-img"> -->
                 </a>
             </div>
             <nav class="nav-block" id="nav-block">
@@ -44,10 +43,10 @@
                         <a class ="nav-a" href="#sectionThree"> Stocks </a>
                     </li>
                     <li class="nav-li">
-                        <a class ="nav-a" href="#nftBlock"> NFT </a>
+                        <a class ="nav-a" href="#sectionFour"> NFT </a>
                     </li>
                     <li class="nav-li">
-                        <a class ="nav-a" href="#"> Contact </a>
+                        <a class ="nav-a" href="#sectionFive"> Contact </a>
                     </li>
                 </ul>
             </nav>
@@ -64,7 +63,7 @@
     <section id="sectionOne" class="section-one">
         <div class="section-one">
             <div class="accordion-body">
-                <h2 class="title">InvestyZone</h2>
+                <h2 id ="sectionOneTitle" class="title">InvestyZone</h2>
                 <div class="accordion-div ">
                     <h2 class="accordion-title">Cryptocurrency</h2>
                     <p class="accordion-text">Cryptocurrency is digital money. This type of currency uses blockchain technology, which is considered secure because it is capable of establishing distributed consensus even among untrustworthy parties.</p>
@@ -124,7 +123,7 @@
         </div>
     </section>
     <section id="sectionThree" class="section-three">
-        <h2 class="sectionThree-title">Stocks and Shares</h2>
+        <h2 id="sectionThree-title" class="sectionThree-title">Stocks and Shares</h2>
         <div class="chart-container">
             <div class="stock-div">  
                 <div class="stock-block">
@@ -280,62 +279,88 @@
             </div>
         </div>
         <h3 class="top-nft-title">Top collection and Creators</h3>
+        
         <div class="top-creators-div">
             <div class="creators-block" id="creators-block">
-                <div class="creators-div" id="creators-div-1">
-                    <img src="img/metaangel.png" alt="meta-img" class="creators-img">
-                    <h2 class="creators-title"> ▵META ANGEL - 1 NFT▵</h2>
-                    <div class="price-div">
-                        <p class="price">Price</p>
-                        <p class="price-num">999 BUSD ≈ $ 999.60</p>
+                <div class="flip-card">
+                    <div class="flip-card-inner" id="creators-div-1">
+                        <div class="flip-card-front">
+                            <img src="img/metaangel.png" alt="meta-img" class="creators-img">
+                            <h2 class="creators-title"> ▵META ANGEL - 1 NFT▵</h2>
+                            <div class="price-div">
+                                <p class="price">Price</p>
+                                <p class="price-num">999 BUSD ≈ $ 999.60</p>
+                            </div>
+                            <div class="creator-name-div">
+                                <p class="creator">Creator</p>
+                                <p class="creators-name"> NFT-CAT </p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="creators-describe">S GRADE META ANGELS - unique collection consisting of 1111 meta-angels, which live in a parallel world of the metaverse that intersects with the real world. They are made of light, incredibly strong and powerful.</p>  
+                        </div>
                     </div>
-                    <div class="creator-name-div">
-                        <p class="creator">Creator</p>
-                        <p class="creators-name"> NFT-CAT </p>
-                    </div>
-                    <p class="creators-describe">S GRADE META ANGELS - unique collection consisting of 1111 meta-angels, which live in a parallel world of the metaverse that intersects with the real world. They are made of light, incredibly strong and powerful.</p>  
                 </div>
 
-                <div class="creators-div" id="creators-div-1">
-                    <img src="img/boredmonkey.jpeg" alt="meta-img" class="creators-img">
-                    <h2 class="creators-title"> #BORED APE #1992▵41╳55▵NFT PRIDE </h2>
-                    <div class="price-div">
-                        <p class="price">Price</p>
-                        <p class="price-num">800 BUSD ≈ $ 800.56</p>
+                <div class="flip-card">
+                    <div class="flip-card-inner" id="creators-div-1">
+                        <div class="flip-card-front">
+                            <img src="img/boredmonkey.jpeg" alt="meta-img" class="creators-img">
+                            <h2 class="creators-title"> #BORED APE #1992▵41╳55▵NFT PRIDE </h2>
+                            <div class="price-div">
+                                <p class="price">Price</p>
+                                <p class="price-num">800 BUSD ≈ $ 800.56</p>
+                            </div>
+                            <div class="creator-name-div">
+                                <p class="creator">Creator</p>
+                                <p class="creators-name"> NFT_PRIDE </p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="creators-describe">Bored Ape Yacht Club, or often colloquially called Bored Ape, is a non-fungible token collection built on the Ethereum blockchain. The collection features profile pictures of cartoon apes that are procedurally generated by an algorithm.</p>  
+                        </div>
                     </div>
-                    <div class="creator-name-div">
-                        <p class="creator">Creator</p>
-                        <p class="creators-name"> NFT_PRIDE </p>
-                    </div>
-                    <p class="creators-describe">Bored Ape Yacht Club, or often colloquially called Bored Ape, is a non-fungible token collection built on the Ethereum blockchain. The collection features profile pictures of cartoon apes that are procedurally generated by an algorithm.</p>  
                 </div>
 
-                <div class="creators-div" id="creators-div-1">
-                    <img src="img/cat.png" alt="meta-img" class="creators-img">
-                    <h2 class="creators-title"> TKG0343</h2>
-                    <div class="price-div">
-                        <p class="price">Price</p>
-                        <p class="price-num">394 BUSD ≈ $ 394.28</p>
-                    </div>
-                    <div class="creator-name-div">
-                        <p class="creator">Creator</p>
-                        <p class="creators-name"> Proud_Kitty_Gang </p>
-                    </div>
-                    <p class="creators-describe">Tattooed Kitty Gang s a collection of 666 badass kitty gangsters, with symbol of tattoos, living in the Proud Kitty Gang (“PKG”) metaverse. Each TKG is an 1/1 ID as gangster member & all the joint rights</p>  
-                </div>
 
-                <div class="creators-div" id="creators-div-1">
-                    <img src="img/akatzuki.png" alt="meta-img" class="creators-img">
-                    <h2 class="creators-title"> AKATZUKI #117</h2>
-                    <div class="price-div">
-                        <p class="price">Price</p>
-                        <p class="price-num"> 0.182 ETH ≈ $ 327.96 </p>
+                <div  class="flip-card">
+                    <div class="flip-card-inner" id="creators-div-1">
+                        <div class="flip-card-front">
+                            <img src="img/cat.png" alt="meta-img" class="creators-img">
+                            <h2 class="creators-title"> TKG0343</h2>
+                            <div class="price-div">
+                                <p class="price">Price</p>
+                                <p class="price-num">394 BUSD ≈ $ 394.28</p>
+                            </div>
+                            <div class="creator-name-div">
+                                <p class="creator">Creator</p>
+                                <p class="creators-name"> Proud_Kitty_Gang </p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="creators-describe">Tattooed Kitty Gang s a collection of 666 badass kitty gangsters, with symbol of tattoos, living in the Proud Kitty Gang (“PKG”) metaverse. Each TKG is an 1/1 ID as gangster member & all the joint rights</p> 
+                        </div> 
                     </div>
-                    <div class="creator-name-div">
-                        <p class="creator">Creator</p>
-                        <p class="creators-name">NFT_PRIDE </p>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner" id="creators-div-1">
+                        <div class="flip-card-front">
+                            <img src="img/akatzuki.png" alt="meta-img" class="creators-img">
+                            <h2 class="creators-title"> AKATZUKI #117</h2>
+                            <div class="price-div">
+                                <p class="price">Price</p>
+                                <p class="price-num"> 0.182 ETH ≈ $ 327.96 </p>
+                            </div>
+                            <div class="creator-name-div">
+                                <p class="creator">Creator</p>
+                                <p class="creators-name">NFT_PRIDE </p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="creators-describe"> AKATZUKI is our exclusive collection consisting of 3,333 anime characters, who want to take possession of tailed demons, nine monsters. They want to free the whole world from villains and bring peace and freedom to everyone's home.</p>  
+                        </div>
+                        
                     </div>
-                    <p class="creators-describe"> AKATZUKI is our exclusive collection consisting of 3,333 anime characters, who want to take possession of tailed demons, nine monsters. They want to free the whole world from villains and bring peace and freedom to everyone's home.</p>  
                 </div>
             </div>
 
@@ -350,7 +375,7 @@
             <div class="close-icon" id="close"> <i class="fa-solid fa-xmark"> </i> </div>
         </div>
     </section>
-    <section class="sectionFive">
+    <section id="sectionFive" class="sectionFive">
         <h2 class="section-post-title">Contuct Us and Sign Up</h2>
         <form action="" method="POST" class="mainForm" id="mainForm">
             <h3 class="form-title">Let's create your account!</h3>
