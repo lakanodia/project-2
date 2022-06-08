@@ -203,7 +203,7 @@ function serverRequest(url,callBack){
     })
     request.send();
 };
-// https://api.npoint.io/44c1c313d40c0811ad19?fbclid=IwAR0Soc4b2H9q4hysAcZHt5CXQ-ysYvYLHpg7vZiY0oWGqo9L5HRhTBeVB9s
+
 serverRequest('https://jsonplaceholder.typicode.com/posts', function(data){
     printPosts(data)
 });
@@ -214,7 +214,6 @@ function printPosts(data) {
     });
 }
 
-// post.setAttribute('data-id', item.id-1); setatributes ყველას დავუწერე -1
 // this function brings posts from server, get id and title
 function createPosts(item){
     let post = document.createElement('div');
@@ -224,11 +223,6 @@ function createPosts(item){
     let postTitle = document.createElement('h2');
     postTitle.classList.add('h2-title');
     postTitle.textContent =  item.id;
-
-    // დაპრინტულ პოსტებზე გამოვაჩინე IMG 
-    // let postIMG = document.createElement('img');
-    // postIMG.classList.add('img-post');
-    // postIMG.setAttribute('src',item.image);
 
     let postElement = document.createElement('h3');
     postElement.classList.add('title');
@@ -247,10 +241,10 @@ function createPosts(item){
     });
     postTitle.addEventListener('click', onTextClick); 
     postElement.addEventListener('click', onTextClick); 
-    // postIMG.addEventListener('click', onTextClick); 
+
 
     post.appendChild(postTitle);
-    // post.appendChild(postIMG);
+
     post.appendChild(postElement);
     post.appendChild(postviewButton);
 
@@ -262,8 +256,7 @@ function onTextClick(event) {
     postContent.innerHTML = '';
     let id = event.target.parentElement.getAttribute('data-id');
     openPostCard(id);
-}
-// დავამატე  postCardInfo(data[id]);
+};
 // this function opens the specific post that I select
 function openPostCard(id){
     postCard.classList.add('active-post');
@@ -283,13 +276,9 @@ function postCardInfo(item){
     descriptionPost.classList.add('post-description');
     descriptionPost.innerHTML = item.body;
 // დავამატე სურათის ტეგი
-    // let postImage = document.createElement('img');
-    // postImage.classList.add('post-img');
-    // postImage.setAttribute('src', item.image);
  
     postContent.appendChild(titlePost);
     postContent.appendChild(descriptionPost);
-    // postContent.appendChild(postImage);
     postCard.appendChild(postContent);
 
     postClose.addEventListener('click', function(){
@@ -297,9 +286,6 @@ function postCardInfo(item){
         postContent.innerHTML = '';
     });
 }
-
-
-
 
 
 // form Validation
@@ -330,7 +316,6 @@ document.getElementById('mainForm').addEventListener('submit', function(event) {
         errors.email = 'Email can not be empty';
     }
 
-   
     //  ვალიდაცია პაროლებზე
 
     form.querySelectorAll('.error-text').forEach(item => {
