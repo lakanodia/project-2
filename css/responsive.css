@@ -23,17 +23,20 @@
     .nav-block.activeNavigation {
         display: block;
     }
-
+    .nav-ul{
+        flex-direction: column; 
+        
+    }
     .burger-child.middle{
         display: none;
         
     }
     .burger-child.top{
-        transform: rotate(-45deg) translate(-6px, 0px);
-        transition: 0.5s linear;
+        transform: rotate(-45deg) translate(-8px, 2px);
+        transition: 0.3s linear;
     }
     .burger-child.bottom{
         transform: rotate(45deg) translate(-6px, 0px);
-        transition: 0.5s linear;
+        transition: 0.3s linear;
     } 
 }
