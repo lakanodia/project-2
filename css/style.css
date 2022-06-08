@@ -260,13 +260,13 @@ body{
     letter-spacing: 10px;
     font-size: 70px;
     color: white;
-    margin: 50px auto 80px auto;
+    margin: 120px auto 80px auto;
     text-shadow: 0px 5px 30px #FFFFFF;
     text-align: center;
     font-family: 'Dancing Script';
 }
-.section-four{
-    margin-top: 150px;
+.sectionFour{
+    margin-top: 200px;
 }
 .section-post-title{
     letter-spacing: 10px;
