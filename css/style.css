@@ -8,9 +8,9 @@
 body{
     font-family: 'Comfortaa';
     background: rgb(28,45,94);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(28,45,94,1)), to(rgba(15,12,53,1)));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(28,45,94,1)), to(rgb(17, 14, 58)));
     background: -o-linear-gradient(bottom, rgba(28,45,94,1) 0%, rgba(15,12,53,1) 100%);
-    background: linear-gradient(0deg, rgba(28,45,94,1) 0%, rgba(15,12,53,1) 100%);
+    background: linear-gradient(0deg, rgb(31, 45, 88) 0%, rgb(19, 16, 59) 100%);
 }
 .style{
     text-shadow: 0px 3px 10px #00d0ff;
