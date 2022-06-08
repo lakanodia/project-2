@@ -418,3 +418,11 @@ burgerButton.addEventListener('click', function(){
 //         }
 //     });
 // });
+
+// This is current date on footer
+function currentDate(){
+    var today = new Date(); 
+    var date = document.getElementById('current-date');
+    date.innerHTML = today;
+}
+currentDate();

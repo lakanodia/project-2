@@ -18,7 +18,7 @@ body{
     align-items: center;
     position: fixed;
     font-weight: 900;
-    background-color: #0D1539;
+    background-color: #21212E;
     top: 0;
     left: 0;
     width: 100%;
@@ -32,12 +32,11 @@ body{
     transition: 0.5s;
 }
 .nav-block{
+    margin-right: 15px;
     transition: 0.4s;
 }
 .nav-li{
-    width: 200px;
-    height: 70px;
-    margin-right: 5%;
+    margin-left: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -190,7 +189,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 60px auto 0px auto;
-    position: relative;
     box-shadow: 0px 0px 50px rgb(10, 6, 62);
     position: relative;
 }
@@ -330,9 +328,9 @@ body{
     animation: spin 5s ;
 }
 
-@keyframes spin {
+/* @keyframes spin {
     50% {transform: rotate(180deg);}
-}
+} */
 .chart-container{
     max-width: 1200px;
     width: 100%;
@@ -353,7 +351,7 @@ body{
 .country{
     max-width: 40px;
     width: 100%;
-    height: 20px;
+    height: 15px;
     background-color: goldenrod;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -437,6 +435,51 @@ body{
     /* overflow: hidden; */
     font-size: 10px;
     margin-top: 15px;
+}
+
+.creators-block{
+    max-width: 1000px;
+    margin: 60px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.creators-div{
+    max-width: 430px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0px 3px 20px rgb(229, 255, 0);
+    background-color:  rgb(49, 48, 48);
+    opacity: 70%;
+    margin-bottom: 50px;
+}
+.creators-img{
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    transform: scale(0.95);
+	transition: .5s ease-in-out;
+}
+.creators-img:hover{
+    transform: scale(1);
+}
+.price-div,
+.creator-name-div{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.creators-describe{
+    margin: 15px;
 }
 
 
@@ -760,4 +803,125 @@ body{
     right: 10px;
     display: none;
     cursor: pointer;    
+}
+
+
+/* footer */
+.footer-left-block{
+    max-width: 300px;
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+}
+.title-footer{
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 900;
+}
+.text{
+    max-width: 260px;
+    width: 100%;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.social-icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.footer-block{
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    background-color: #21212E;
+    font-family: 'Comfortaa';
+}
+.footer-right-block{
+    display: flex;
+    color: white;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.p-block::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.email-before::before{
+    background-image: url("../img/mail.png");
+}
+.phone-before::before{
+    background-image: url("../img/phone.png");
+}
+.map-before::before{
+    background-image: url("../img/map-pin.png");
+}
+.p-text{
+    margin-bottom: 15px;
+    color: #5863F8;
+    font-weight: 600;
+}
+.p-block{
+    margin-bottom: 20px;
+}
+.footer{
+    position: relative;
+}
+.footer-copyright{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Comfortaa';
+    color: white;
+    position: absolute;
+    top:90%;
+    left: 0%;
+}
+.date-block{
+    background-color: #21212E;
+    color: white;
+}
+.icon-block{
+    background-color: #5863F8;
+    color: white;
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.change{
+    max-width: 30px;
+    width: 100%;
+    height: 30px;
+    margin-right: 10px;
+}
+.twitter{
+    background-color: #55ACEE;
+}
+.google{
+    background-color: #DC4E41;
 }
