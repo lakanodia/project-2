@@ -25,12 +25,13 @@
         <div class="header-block" id="header-block">
             <div class="logo-div">
                 <a class="logo-link" href="index.html" id="logo-link">
-                    <img class="logo-icon" src="img/icon.jpg" alt="icon-img">
+                    <i class="fa-brands fa-bitcoin style"></i>
+                    <!-- <img class="logo-icon" src="img/logo3.png" alt="logo-img"> -->
                 </a>
             </div>
             <nav class="nav-block" id="nav-block">
                 <ul class="nav-ul" id="">
-                    <li class="nav-li active-li">
+                    <li class="nav-li">
                         <a class ="nav-a" href="index.html"> Home </a>
                     </li>
                     <li class="nav-li">
@@ -40,10 +41,10 @@
                         <a class ="nav-a" href="#sectionTwo"> Cryptocurrency </a>
                     </li>
                     <li class="nav-li">
-                        <a class ="nav-a" href="#"> Stocks </a>
+                        <a class ="nav-a" href="#sectionThree"> Stocks </a>
                     </li>
                     <li class="nav-li">
-                        <a class ="nav-a" href="#"> NFT </a>
+                        <a class ="nav-a" href="#nftBlock"> NFT </a>
                     </li>
                     <li class="nav-li">
                         <a class ="nav-a" href="#"> Contact </a>
@@ -82,31 +83,48 @@
     <section id="sectionTwo" class="section-two">
         <div class="crypto-div">
             <h2 class="sectionTwo-title">Cryptocurrency</h2>
-            <div class="crypto-block">
-                <img class="crypto-logo" src="img/btc.png" alt="btc-img">
-                <h3 class="crypto-name">Bitcoin BTC</h3>
-                <p class="btc-price">$31,704</p>
-                <p class="btc-change">+6.04%</p>
-                <img class="crypto-chart" src="img/bitcoin.png" alt="btc-chart">
-            </div>
-            <div class="crypto-block">
-                <img class="crypto-logo" src="img/eth.png" alt="btc-img">
-                <h3 class="crypto-name">Ethereum ETH</h3>
-                <p class="eth-price">$1,897</p>
-                <p class="eth-change">+5.13%</p>
-                <img class="crypto-chart" src="img/etherium.png" alt="btc-chart">
-            </div>
-            <div class="crypto-block">
-                <img class="crypto-logo" src="img/xrp-logo.png" alt="btc-img">
-                <h3 class="crypto-name">Ripple XRP</h3>
-                <p class="xrp-price">$0.40</p>
-                <p class="xrp-change">+2.43%</p>
-                <img class="crypto-chart" src="img/xrp.png" alt="btc-chart">
+            <div class="crypto-main-block">
+                <div class="table-titles">
+                    <h4>Coin Name</h4>
+                    <h4>Market Cap</h4>
+                    <h4>Perf Year</h4>
+                    <h4>Chart Year</h4>
+                </div>
+                <div class="crypto-block">
+                    <img class="crypto-logo" src="img/btc.png" alt="btc-img">
+                    <h3 class="crypto-name">Bitcoin BTC</h3>
+                    <p class="btc-mktcap">$562 B</p>
+                    <p class="btc-change">-18.88%</p>
+                    <img class="crypto-chart" src="img/bitcoin.png" alt="btc-chart">
+                    <div class="view-div">
+                        <a href="https://www.tradingview.com/symbols/BTCUSD/" target="_blank" class="view-text">View price</a>
+                    </div>
+                </div>
+                <div class="crypto-block">
+                    <img class="crypto-logo" src="img/eth.png" alt="btc-img">
+                    <h3 class="crypto-name">Ethereum ETH</h3>
+                    <p class="eth-mktcap">$212 B</p>
+                    <p class="eth-change">-36.56%</p>
+                    <img class="crypto-chart" src="img/etherium.png" alt="btc-chart">
+                    <div class="view-div">
+                        <a href="https://www.tradingview.com/symbols/ETHUSDT/" target="_blank" class="view-text">View price</a>
+                    </div>
+                </div>
+                <div class="crypto-block">
+                    <img class="crypto-logo" src="img/xrp-logo.png" alt="btc-img">
+                    <h3 class="crypto-name">Ripple XRP</h3>
+                    <p class="xrp-price">$18 B</p>
+                    <p class="xrp-change">-59.26%</p>
+                    <img class="crypto-chart" src="img/xrp.png" alt="btc-chart">
+                    <div class="view-div">
+                        <a href="https://www.tradingview.com/symbols/XRPUSD/" target="_blank" class="view-text">View price</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section id="sectionThree" class="section-three">
-        <h2 class="sectionTwo-title">Stocks and Shares</h2>
+        <h2 class="sectionThree-title">Stocks and Shares</h2>
         <div class="chart-container">
             <div class="stock-div">  
                 <div class="stock-block">
@@ -114,7 +132,7 @@
                     <ul class="stock-info">
                         <li class="stock-li">
                             <p class="stock-text">Market Cap: </p>
-                            <p class="apple num"> 2447.36B </p> 
+                            <p class="apple num"> 2,447.36B </p> 
                         </li>
                         <li class="stock-li">
                             <p class="stock-text">Income:  </p>
@@ -165,14 +183,34 @@
                 </div>
             </div>
             <div class="pie-chart">
-                <div class="countries">
-                    <div class=""></div>
-                    <p></p>
+                <div class="countries-main-div">
+                    <div class="countries-block">
+                        <div class="country purple"></div>
+                        <p class="country-text">USA</p>
+                    </div>
+                    <div class="countries-block">
+                        <div class="country red"></div>
+                        <p class="country-text">Japan</p>
+                    </div>
+                    <div class="countries-block">
+                        <div class="country green"></div>
+                        <p class="country-text">UK</p>
+                    </div>
+                    <div class="countries-block">
+                        <div class="country orange"></div>
+                        <p class="country-text">China</p>
+                    </div>
+                    <div class="countries-block">
+                        <div class="country yellow"></div>
+                        <p class="country-text">Other</p>
+                    </div>                   
                 </div>
-                <img class="donut-chart-img" src="img/donut-chart.png" alt="">
 
-
+                <div>
+                    <img class="donut-chart-img" src="img/donut-chart.png" alt="">
+                </div>   
             </div>
+
         </div>
 
         <div class="trading-block">
@@ -199,6 +237,99 @@
             </div>
         </div>
     </section>
+    <section id="sectionFour" class="section-four">
+        <h2 class="sectionFour-title">NFT-Non Fungible token</h2>
+        <h3 class="top-nft-title">Top Collections</h3>
+        
+        <div id="nftBlock" class="nft-block">  
+            <div class="top-nft-div">
+                <a href="https://crypto.com/nft/collection/7de89f77c9623535ae035b076fe3f691" target="_blank">
+                    <img class="nft-img" src="img/1.gif" alt="img-1" id="nft1">
+                    <p class="text-nft">CRYPTO CIBER PIRATES</p>
+                </a>
+            </div>
+            <div class="top-nft-div">
+                <a href="https://crypto.com/nft/collection/366e1c3857fecce971703df888904e86" target="_blank">
+                    <img class="nft-img" src="img/2.gif" alt="img-2" id="nft2">
+                    <p class="text-nft">Cyber Cubs</p>
+                </a>
+            </div>
+            <div class="top-nft-div">
+                <a href="https://crypto.com/nft/collection/c3056877450d16febf513a2ad7d9fee9" target="_blank">
+                    <img class="nft-img" src="img/3.gif" alt="img-3" id="nft3">
+                    <p class="text-nft">The TRIP: Origin</p>
+                </a>
+            </div>
+            <div class="top-nft-div">
+                <a href="https://crypto.com/nft/collection/faa3d8da88f9ee2f25267e895db71471" target="_blank">
+                    <img class="nft-img" src="img/4.gif" alt="img-4" id="nft4">
+                    <p class="text-nft">PsychoKitties: The New Era</p>
+                </a>
+            </div>
+            <div class="top-nft-div">
+                <a href="https://crypto.com/nft/collection/69d0601d6d4ecd0ea670835645d47b0d" target="_blank">
+                    <img class="nft-img" src="img/5.gif" alt="img-5" id="nft5">
+                    <p class="text-nft">PsychoKitties: The Rise Of Mollies</p>
+                </a>
+            </div>
+        </div>
+        <div class="slider-block" id="slider-block">
+            <button class="arrow right" id="right-arrow"> <i class="fa-solid fa-angles-right"></i> </button>
+            <button class="arrow left" id="left-arrow" ><i class="fa-solid fa-angles-left"></i></button>
+            <div class="slider-content" id="slider-content" style="background-position: 30% 30%;">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="section-post-title" >Information About Posts</h1>
+        <div class="main-post-block" id="main-post-block">
+        </div>
+        <div class="post-card" id="post-card">
+            <div class="post-content" id="post-content"></div>
+            <div class="close-icon" id="close"> <i class="fa-solid fa-xmark"> </i> </div>
+        </div>
+    </section>
+    <section class="sectionFive">
+        <h2>Contuct Us and Sign Up</h2>
+        <form action="" method="POST" class="mainForm" id="mainForm">
+            <h3 class="form-title">Let's create your account!</h3>
+            <label for="yourName" class="">Your Name</label>
+            <div>
+                <input class="input" type="text"  id="yourName" name="yourName" placeholder="Your Name">
+                <span class="error-text"  id="error_yourName"></span>
+            </div>
+
+            <label for="yourSurname" class="">Your Surname</label>
+            <div>
+                <input class="input" type="text" id="yourSurname" name="yourSurname" placeholder="Your Surname">
+                <span class="error-text"  id="error_yourSurname"></span>
+            </div>
+
+            <label for="email"> Enter your email:</label>
+            <div class="email-div">
+                <input class="input" type="email" id="email" name="email" placeholder="Your Email" onkeydown="validation()">
+                <span class="error-text" id="error_email"></span>
+            </div>
+
+            <label for="password"> Enter Password:</label>
+            <div >
+                <input class="input" type="password" name="password" id="password" placeholder="Your Password">
+                <i id="toggleIcon" class="fa-solid fa-eye"></i>
+                <span class="error-text" id="error_password"></span>
+            </div>
+
+            <label for=""> Repeat Password: </label>
+            <div>
+                <input class="input" type="password" name="password1" id="password1" placeholder="Your Password">
+                <span class="error-text" id="error_password1"></span>
+            </div>
+            <Button class="saveButton" id="">Send</Button>
+        </form>
+    </section>
+
+    <footer class="footer-block">
+        
+    </footer>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script src="script.js"></script>
 </body>
