@@ -167,7 +167,10 @@
     .stock-text{
         margin-right: 5px;
     }
-
+    .title,
+    .view-post{
+        font-size: 20px;
+    }
 }
 
 

@@ -932,6 +932,10 @@ body{
     font-weight: 900;
 }
 
+.title-investy{
+    font-size: 25px;
+}
+
 /*style post card that opens after click */
 .post-card{
     position: fixed;
