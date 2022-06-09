@@ -62,6 +62,7 @@ body{
 }
 .nav-a:hover{
     background: #00d0ff;
+    border-radius: 6px;
     color:#ffffff;
     -webkit-box-shadow: 0 0 50px  #00d0ff;
             box-shadow: 0 0 50px  #00d0ff;
@@ -74,8 +75,9 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
     border-top: 2px solid  #00d0ff;
     border-left: 2px solid  #00d0ff;
     -webkit-transition: 0.5s;
@@ -90,8 +92,9 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
     border-bottom: 2px solid  #00d0ff;
     border-right: 2px solid  #00d0ff;
     -webkit-transition: 0.5s;
