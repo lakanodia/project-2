@@ -1284,9 +1284,9 @@ body{
     text-align: center;
     color: white;
     border-radius: 10px 50px 200px 200px;
-    
-    background-color:  rgba(69, 255, 218, 0.531);
-    opacity: 70%;
+    background: rgb(0, 255, 234);
+    background: linear-gradient(90deg, rgb(0, 203, 249) 0%, rgba(0,225,221,1) 97%);
+    opacity: 90%;
     transition: 0.5s;
     margin-bottom: 50px;
 }
@@ -1382,7 +1382,7 @@ body{
     max-width: 500px;
     width: 100%;
     position: fixed;
-    top: 8%;
+    top: 11%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -1393,7 +1393,7 @@ body{
     padding: 20px;
     border-radius: 5px;
     font-size: 12px;
-    color: #377eaa;
+    color: #00eeff;
     z-index: 3;
 }
 .newservice-title{
@@ -1433,7 +1433,7 @@ input[type="email"]{
     height: 70px;
 }
 .span-error{
-    margin: 15px;
+    margin: 8px;
     color: rgb(255, 86, 86);
 }
 input[type=file]::file-selector-button {
@@ -1499,7 +1499,6 @@ textarea {
     display: block;
     width: 400px;
     height: 150px;
-    margin: 0 0 20px;
     padding: 8px 12px 10px 12px;
     border: 0px solid rgba(0,0,0,.5);
     border-radius: 15px;
@@ -1510,4 +1509,14 @@ textarea {
 .file-select{
     margin-bottom: 10px;
 }
-  
+.stock-ul{
+    text-align: center;
+   color:  rgba(79, 113, 175, 0.417);
+}
+.stock-li{
+    margin-top: 15px;
+}
+.chart-color{
+    color: #087891;
+    font-weight: 900;
+}

@@ -405,7 +405,6 @@ currentDate();
 
 // Coin live prices
 
-
 var btc = document.getElementById("bitcoin");
 var eth = document.getElementById("ethereum");
 var doge = document.getElementById("dogecoin");
@@ -431,14 +430,14 @@ $.ajax(settings).done(function(response){
 
 // Charts pie chart
 
-var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var xValues = ["USA", "Japan", "UK", "China", "Other"];
 var yValues = [55, 49, 44, 24, 15];
 var barColors = [
-  "#2bfa24",
-  "#00aba9",
-  "#2b5797",
-  "#e8c3b9",
-  "#1e7145"
+  "#ff66ff",
+  "#ff6666",
+  "#00e64d",
+  "#ffc34d",
+  "#5dd5d5"
 ];
 
 new Chart("myChartDonut", {
@@ -458,9 +457,9 @@ new Chart("myChartDonut", {
   }
 });
 
-
-var zValues = [50,60,70,80,90,140,300];
-var kValues = [7,8,8,9,9,9,10,11,14,14,15];
+// line chart
+var zValues = [50,60,50,80,90,50,60];
+var kValues = [7,8,7,8,9,7,7];
 
 new Chart("myChart", {
   type: "line",
@@ -469,15 +468,15 @@ new Chart("myChart", {
     datasets: [{
       fill: true,
       lineTension: 0,
-      backgroundColor: "rgba(0,0,255,1.0)",
-      borderColor: "rgba(0,0,255,0.1)",
+      backgroundColor: "rgba(218, 70, 210, 0.405)",
+      borderColor: "rgba(255, 114, 248, 0.647)",
       data: kValues
     }]
   },
   options: {
     legend: {display: false},
     scales: {
-      yAxes: [{ticks: {min: 6, max:10}}],
+      yAxes: [{ticks: {min: 6, max:12}}],
     }
   }
 });
@@ -491,15 +490,15 @@ new Chart("myChartTwo", {
     labels: tValues,
     datasets: [{ 
       data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
-      borderColor: "red",
+      borderColor: "rgba(255, 84, 246, 0.862)",
       fill: false
     }, { 
       data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
-      borderColor: "green",
+      borderColor: "rgba(32, 255, 3, 0.823)",
       fill: false
     }, { 
       data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
-      borderColor: "blue",
+      borderColor: "rgba(24, 216, 255, 0.666)",
       fill: false
     }]
   },
@@ -510,29 +509,27 @@ new Chart("myChartTwo", {
 
 
 
-var aValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-var bValues = [55, 49, 44, 24, 15];
-var barColors = ["red", "green","blue","orange","brown"];
+var aValues = ["MSFT", "AMZN", "GOOG", "META"];
+var bValues = [55, 49, 44, 40, 30];
+var barColors = ["#00cc99", "#ff99cc","#bfff80","#00ffff"];
 
 new Chart("myChartThree", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: aValues,
     datasets: [{
       backgroundColor: barColors,
-      data: yValues
+      data: bValues
     }]
   },
   options: {
     legend: {display: false},
     title: {
       display: true,
-      text: "World Wine Production 2018"
+      text: "S&P 500 Companies by Weight"
     }
   }
 });
-
-
 
 
 // პორთფოლიოს დამატების შესაძლებლობა
