@@ -361,7 +361,7 @@ function showHidePassword() {
 
 toggleIcon.addEventListener('click', showHidePassword);
 
-// იმეილის  მეორე ვალიდაცია
+// იმეილის მეორე ვალიდაცია
 
 function validation() {
     let emailText = document.getElementById('email').value;
@@ -400,3 +400,326 @@ function currentDate(){
     date.innerHTML = today;
 }
 currentDate();
+
+
+
+// Coin live prices
+
+
+var btc = document.getElementById("bitcoin");
+var eth = document.getElementById("ethereum");
+var doge = document.getElementById("dogecoin");
+var lite = document.getElementById("litecoin");
+var solana = document.getElementById("solana");
+var stellar = document.getElementById("stellar");
+
+let settings = {
+    "async" : true,
+    "scrossDomain": true,
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Clitecoin%2Csolana%2Cdogecoin%2Cstellar&vs_currencies=usd",
+    "method": "GET",
+    "headers": {}
+}
+$.ajax(settings).done(function(response){
+    btc.innerHTML = Math.round(response.bitcoin.usd);
+    eth.innerHTML = Math.round( response.ethereum.usd);
+    lite.innerHTML = Math.round(response.litecoin.usd);
+    solana.innerHTML = Math.round( response.solana.usd);
+    stellar.innerHTML = response.stellar.usd;
+    doge.innerHTML = response.dogecoin.usd;
+});
+
+// Charts pie chart
+
+var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = [
+  "#2bfa24",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChartDonut", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Market Capitalization by country 2022"
+    }
+  }
+});
+
+
+var zValues = [50,60,70,80,90,140,300];
+var kValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: zValues,
+    datasets: [{
+      fill: true,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: kValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:10}}],
+    }
+  }
+});
+
+
+var tValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChartTwo", {
+  type: "line",
+  data: {
+    labels: tValues,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    }, { 
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+
+
+var aValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var bValues = [55, 49, 44, 24, 15];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChartThree", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+
+
+
+
+// პორთფოლიოს დამატების შესაძლებლობა
+let serviceFromBlock =document.querySelector('#portfolio-form-block');
+let addServiceForm = document.querySelector('#add-portfolio-icon');
+let closeForm = document.querySelector('#close-form');
+let closePortfolioButton = document.querySelector('#close-portfolio-button');
+let saveServiceButton = document.querySelector('#save-service-button');
+let servicesBlock = document.querySelector('#portfolio-block');
+
+let titleInput = document.querySelector('#portfolio-item-title');
+let titleInput2 = document.querySelector('#portfolio-item-title2');
+let titleInput3 = document.querySelector('#portfolio-item-title3');
+let descriptionInput = document.querySelector('#service-description');
+let imgInput = document.querySelector('#img-input');
+
+addServiceForm.addEventListener('click', function(){
+    serviceFromBlock.classList.add('active-post'); 
+});
+
+closeForm.addEventListener('click', function(event){
+    event.preventDefault();
+    resetForm();
+    serviceFromBlock.classList.remove('active-post');
+});
+closePortfolioButton.addEventListener('click', function(event){
+    event.preventDefault();
+    resetForm();
+    serviceFromBlock.classList.remove('active-post');
+});
+
+let deleteServiceButton1 = document.querySelector('#static-delete-button-1');
+deleteServiceButton1.addEventListener('click', function(){
+    document.querySelector('#portfolio-div-1').remove();
+});
+
+let deleteServiceButton2 = document.querySelector('#static-delete-button-2');
+deleteServiceButton2.addEventListener('click', function(){
+    document.querySelector('#portfolio-div-2').remove();
+});
+
+function addNewPost(){
+    let serviceDivElement = document.createElement('div');
+    serviceDivElement.classList.add('portfolio-div');
+
+    //add image on img tag
+    let serviceImage = document.createElement('img');
+    serviceImage.classList.add('portfolio-img');
+    serviceImage.setAttribute('src', `img/${imgInput.files[0].name}`);
+  
+    //add filled title on h2 tag
+    let portfolioTitle = document.createElement('h2');
+    portfolioTitle.classList.add('portfolio-item-title');
+    portfolioTitle.textContent = titleInput.value;
+
+    let portfolioTitle2 = document.createElement('h2');
+    portfolioTitle2.classList.add('portfolio-item-title');
+    portfolioTitle2.textContent = titleInput2.value;
+
+
+    let portfolioTitle3 = document.createElement('h2');
+    portfolioTitle3.classList.add('portfolio-item-title');
+    portfolioTitle3.textContent = titleInput3.value;
+
+    //add filled description on p tag
+    let portfolioDescription = document.createElement('p');
+    portfolioDescription.classList.add('portfolio-describe');
+    portfolioDescription.textContent = descriptionInput.value;
+    
+    // add delete button on service card
+    let deleteButton = document.createElement('button');
+    deleteButton.classList.add('delete-portfolio-button');
+    deleteButton.textContent = 'Delete Service';
+    deleteButton.addEventListener('click', function(){
+        serviceDivElement.remove();
+    })
+
+    serviceDivElement.appendChild(serviceImage);
+    serviceDivElement.appendChild(portfolioTitle);
+    serviceDivElement.appendChild(portfolioTitle2);
+    serviceDivElement.appendChild(portfolioTitle3);
+    serviceDivElement.appendChild(portfolioDescription);
+    serviceDivElement.appendChild(deleteButton);
+    servicesBlock.appendChild(serviceDivElement);
+    
+    // after filling a form it would clear automatically
+    resetForm();
+    serviceFromBlock.classList.remove('active-post'); 
+}
+// this function resets a form
+function resetForm() {
+    titleInput.value = '';
+    titleInput2.value = '';
+    titleInput3.value = '';
+    descriptionInput.value = '';
+    imgInput.value = '';
+    resetErrors();
+}
+
+// this function validates form
+function validateForm() {
+    let errors = {};
+     // validation in the name of the service is a maximum of 25 characters
+    let portfolioTitle = document.querySelector('#portfolio-item-title').value;
+    if (portfolioTitle.length>25 || portfolioTitle==''){
+        errors.portfolioTitle = 'Title can not be empty and can not be more than 25 symbols';
+    }
+    
+    // validation in the name of the service is a maximum of 25 characters
+    let portfolioTitle2 = document.querySelector('#portfolio-item-title2').value;
+    if (portfolioTitle2.length>25 || portfolioTitle2==''){
+        errors.portfolioTitle2 = 'Title can not be empty and can not be more than 25 symbols';
+    }
+
+    // validation in the name of the service is a maximum of 25 characters
+    let portfolioTitle3 = document.querySelector('#portfolio-item-title3').value;
+    if (portfolioTitle3.length>25 || portfolioTitle3==''){
+        errors.portfolioTitle3 = 'Title can not be empty and can not be more than 25 symbols';
+    }
+
+    // validation service description maximum  100 symbols  
+    let serviceDescription = document.querySelector('#service-description').value;
+    if (serviceDescription.length>100 || serviceDescription==''){
+        errors.serviceDescription = 'Description can not be empty and can not be more than 100 symbols';
+    }
+
+    // validation on image size, image type and empty image input
+    let files = imgInput.files;
+    if (files.length > 0) {
+        let fileType = files[0].type;
+        let fileSize = files[0].size;
+
+        let maxFileSizeMb = 1000 * 1024;
+        let supportedFileTypes = ['image/png','image/jpeg'];
+
+        if(!supportedFileTypes.includes(fileType)){
+            errors.myfile = 'Please select only jpg or png file type';
+        }
+
+        if (fileSize > maxFileSizeMb) {
+            errors.myfile = 'Please select image size less than 1 MB';
+        }
+    }else{
+        errors.myfile = 'Please select image';
+    }
+    return errors;
+};
+
+document.querySelector('#service-form').addEventListener('submit', onServiceFormSubmit);
+
+// this function valisate form and if there are no mistakes adds it, after this reset error spans
+function onServiceFormSubmit(event){
+    event.preventDefault();
+    let errors = validateForm();
+
+    resetErrors();
+
+    if(Object.keys(errors).length == 0){
+        addNewPost();
+    }else{
+        displayErrors(errors);
+    }
+}
+
+// this function resets error span texts after opening a service form
+function resetErrors() {
+    document.querySelectorAll('.span-error').forEach(item => {
+        item.innerHTML = '';
+    });
+}
+
+// this function collerct error texts
+function displayErrors(errors) {
+    for (let item in errors) {
+        let errorSpan = document.getElementById('error_' + item);
+        if (errorSpan) {
+            errorSpan.textContent = errors[item];
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,178 +1,13 @@
-@media (max-width:1025px){
-    .crypto-main-block{
-        left: 15%;
-    }
-}
-
-@media (max-width:974px){
-    .crypto-main-block{
-        left: 10%;
-    }
-    .main-post-block{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .nav-a{
-        font-size: 10px;
-    }
-}
-
-@media (max-width:954px){
-    .crypto-main-block{
-        left: 8%;
-    }
-    .trading-block{
-        flex-direction: column;
-    }
-    .sectionTwo-title,
-    .sectionThree-title,
-    .sectionFour-title,
-    .section-post-title{
-        font-size: 50px;
-    }
-    
-
-}
-@media (max-width:948px){
-    .crypto-main-block{
-        left: 5%;
-    }
-}
-
-@media (max-width:890px){
-    .crypto-main-block{
-        max-width: 700px;
-        width: 100%;
-    }
-    .creators-block{
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (max-width:770px){
-    .crypto-main-block{
-        max-width: 650px;
-        width: 100%;
-        font-size: 15px;
-    }
-    .view-div{
-        font-size: 10px;
-    }
-}
-
-@media (max-width:700px){
-    .crypto-main-block{
-        max-width: 600px;
-        width: 100%;
-        font-size: 13px;
-    }
-    .view-div{
-        font-size: 13px;
-    }
-}
-
-@media (max-width:650px){
-    .crypto-main-block{
-        max-width: 300px;
-        width: 100%;
-        top:15%;
-        left: 25%;
-    }
-    .sectionTwo-title{
-        font-size: 40px;
-        left: 20%;
-    }
-    .crypto-block{
+@media(max-width:1050px){
+    .investy-info-block{
         flex-direction: column;
         align-items: center;
     }
-    .crypto-div{
-        height: 150vh;
-    }
-    .footer-block{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-    .footer-right-block{
-        flex-direction: column;
-    }
-    .table-titles{
-        display: none;
-    }
-    .crypto-name{
-        text-align: center;
-    }
-    .btc-mktcap,
-    .eth-mktcap,
-    .xrp-mktcap,
-    .view-div
-    {
-        margin: 5px 0px;
-    }
-    .slider-content{
-        background-position: 40% 30%;
-    }
-}
-@media (max-width:580px){
-    .nft-block{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .sectionTwo-title{
-        left: 30%;
-        letter-spacing: 0;
-    }
-    .sectionThree-title{
-        font-size: 30px;
-    }
-    .sectionFour-title{
-        font-size: 30px;
-    }
-    .crypto-main-block{
-        left: 30%;
-        max-width: 250px;
+    .investy-info-div{
+        max-width: 500px;
         width: 100%;
     }
-    .country {
-        max-width: 20px;
-        width: 100%;
-        height: 10px;
-    }
-    .section-post-title{
-        font-size: 40px;
-    }
-    
 }
-@media (max-width:500px){
-    .crypto-main-block{
-        left: 22%;
-        max-width: 200px;
-        width: 100%;
-    }
-    .sectionTwo-title{
-        left: 22%;
-    }
-    .stock-info{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .stock-li{
-        display: flex;
-        
-    }
-    .stock-text{
-        margin-right: 5px;
-    }
-    .title,
-    .view-post{
-        font-size: 20px;
-    }
-}
-
 
 @media(max-width:950px){
     .nav-block{
@@ -221,5 +56,198 @@
         transition: 0.3s linear;
     } 
 }
+
+
+@media (max-width:974px){
+    .main-post-block{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:954px){
+    .trading-block{
+        flex-direction: column;
+    }
+    .sectionTwo-title,
+    .sectionThree-title,
+    .sectionFour-title,
+    .section-post-title{
+        font-size: 50px;
+    }
+}
+@media (max-width:948px){
+    .chart-donut{
+        max-width: 880px;
+        width: 100%;
+    }
+}
+
+@media (max-width:895px){
+    .creators-block{
+        justify-content: center;
+        align-items: center;
+    }
+    .chart-donut{
+        max-width: 860px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:876px){
+    .chart-donut{
+        max-width: 830px;
+        width: 100%;
+    }
+    .creators-block{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:845px){
+    .chart-donut{
+        max-width: 780px;
+        width: 100%;
+    }
+    .portfolio-block{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:800px){
+    .chart-donut{
+        max-width: 700px;
+        width: 100%;
+    }
+}
+
+@media (max-width:750px){
+    .chart-donut{
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:770px){
+    .view-div{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:700px){
+    .chart-donut{
+        max-width: 500px;
+        width: 100%;
+    }
+    .view-div{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:650px){
+    .sectionTwo-title{
+        font-size: 40px;
+        left: 20%;
+    }
+
+    .crypto-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .crypto-div{
+        height: 150vh;
+    }
+    .footer-block{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-right-block{
+        flex-direction: column;
+    }
+    .table-titles{
+        display: none;
+    }
+    .crypto-name{
+        text-align: center;
+    }
+    .btc-mktcap,
+    .eth-mktcap,
+    .xrp-mktcap,
+    .view-div
+    {
+        margin: 5px 0px;
+    }
+    .slider-content{
+        background-position: 40% 30%;
+    }
+}
+@media (max-width:580px){
+    .nft-block{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionTwo-title{
+        left: 30%;
+        letter-spacing: 0;
+    }
+    .sectionThree-title{
+        font-size: 30px;
+    }
+    .sectionFour-title{
+        font-size: 30px;
+    }
+    .country {
+        max-width: 20px;
+        width: 100%;
+        height: 10px;
+    }
+    .section-post-title{
+        font-size: 40px;
+    }
+    .chart-donut{
+        max-width: 450px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:500px){
+    .sectionTwo-title{
+        left: 22%;
+    }
+    .stock-info{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .stock-li{
+        display: flex;
+        
+    }
+    .stock-text{
+        margin-right: 5px;
+    }
+    .title,
+    .view-post{
+        font-size: 20px;
+    }
+    .chart-donut{
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+
+
 
 

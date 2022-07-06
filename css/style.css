@@ -1,21 +1,51 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
-
 body{
     font-family: 'Comfortaa';
-    background: rgb(28,45,94);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(28,45,94,1)), to(rgb(17, 14, 58)));
-    background: -o-linear-gradient(bottom, rgba(28,45,94,1) 0%, rgba(15,12,53,1) 100%);
-    background: linear-gradient(0deg, rgb(31, 45, 88) 0%, rgb(19, 16, 59) 100%);
+    background: rgb(44, 45, 49);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(25, 35, 60)), to(rgb(29, 29, 58)));
+    background: -o-linear-gradient(bottom, rgb(33, 38, 56) 0%, rgb(35, 35, 56) 100%);
+    background: linear-gradient(0deg, rgb(25, 33, 58) 0%, rgb(19, 19, 60) 100%);
 }
 .style{
     text-shadow: 0px 3px 10px #00d0ff;
     color: #00d0ff;
     font-size: 55px;
+}
+.investy-info-block{
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.investy-info-div{
+    max-width: 350px;
+    width: 100%;
+    height: 300px;
+    color: #46C2FF;
+    background-color: rgb(30, 30, 53);
+    padding: 20px 0;
+    margin-bottom: 15px;
+    border: 3px solid #00d0ff;
+    border-radius: 2px;
+    box-shadow: 0px 2px 30px black;
+    opacity: 70%;
+    text-align: center;
+}
+.investy-info-div:hover{
+    opacity: 100%;
+}
+
+.line{
+    max-width: 200px;
+    width: 100%;
+    background-color: #00d0ff;
+    border-color: #00d0ffd8;
+}
+
+.investy-img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 /* Header navigation */
 .logo-icon{
@@ -33,7 +63,7 @@ body{
             align-items: center;
     position: fixed;
     font-weight: 900;
-    background-color: #21212E;
+    background-color: #1e1e45;
     top: 0;
     left: 0;
     width: 100%;
@@ -163,6 +193,7 @@ body{
     background-size: cover;
     margin: 60px auto 0px auto;
     position: relative;
+    z-index: 5;
 }
 .title-banner{
     letter-spacing: 10px;
@@ -386,6 +417,18 @@ body{
             box-shadow: 0px 0px 50px rgb(10, 6, 62);
     position: relative;
 }
+
+.coin-section-div{
+    background-image: url('../img/machine.png');
+    width: 100%;
+    height: 115vh;
+    background-position: 30% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px auto 0px auto;
+    box-shadow: 0px 0px 50px rgb(10, 6, 62);
+    position: relative;
+}
 .crypto-div::before{
     content: "";
     width: 100%;
@@ -464,145 +507,35 @@ body{
 
 /* section three information abouts stocks */
 
-.section-three{
-    margin-top: 100px;
+.chart-linear{
+    max-width: 500px;
+    width: 100%;
+    margin: 80px  auto;
+}
+.chart-donut{
+    max-width: 900px;
+    width: 100%;
+    margin: 80px auto;
+
+}
+.chart-linear-block{
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 .trading-block{
     max-width: 1000px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin:50px auto;
+    flex-wrap: wrap;
+    margin: 50px auto;
 }
 .container{
-    margin-right: 15px;
-}
-.stock-div{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 15px;
-    margin: 0 auto;
-}
-.stock-block{
-    max-width: 600px;
-    width: 100%;
-    background-color: #0d1539cf;
-    padding: 30px;
-    border-radius: 7px;
-    margin-top: 50px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-.stock-block:hover{
-    -webkit-box-shadow: 0px 5px 30px rgb(95, 116, 235);
-            box-shadow: 0px 5px 30px rgb(95, 116, 235);
-}
-.stock-title{
-    color: white;
-    margin: 15px auto;
-    font-weight: 900;
-    text-shadow: 0px 2px 8px #3397fa;
-}
-.chart-img{
-    max-width: 400px;
-    width: 100%;
+    margin-right: 20px;
 }
 
-.stock-info{
-    font-size: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    color: #ffffff;
-    
-}
-.donut-chart-img{
-    max-width: 450px;
-    width: 100%;
-    animation: reverse;
-    -webkit-animation: spin 5s ;
-            animation: spin 5s ;
-}
-
-.chart-container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-}
-.pie-chart{
-    padding-top: 70px;
-}
-.countries-main-div{
-    color: white;
-}
-
-.country-text{
-    margin-bottom: 15px;
-}
-.country{
-    max-width: 40px;
-    width: 100%;
-    height: 15px;
-    background-color: goldenrod;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.country:hover{
-    -webkit-box-shadow: 0px 0px 10px rgb(193, 255, 47);
-            box-shadow: 0px 0px 10px rgb(193, 255, 47)
-}
-.purple{
-    background-color: #db00db;
-}
-.red{
-    background-color: #ff594a;
-}
-.green{
-    background-color: #2bfa24;
-}
-.orange{
-    background-color: #ff951c;
-}
-.stock-text{
-    margin-bottom: 5px;
-    text-align: center;
-}
-.num{
-    font-size: 12px;
-    font-weight: 900; 
-}
-.apple{
-    color: #46BBFF;
-}
-.tesla{
-    color: #ff83ec;
-}
-.netflix{
-    color: #71de90;
-}
 
 /* NFT */
 .top-nft-title{
@@ -979,10 +912,10 @@ body{
 }
 .close-icon{
     position: absolute;
-    top: 5%;
-    right: 18%;
+    top: 4%;
+    right: 5%;
     font-size: 25px;
-    color: rgb(44, 42, 42);
+    color: rgb(98, 200, 255);
     cursor: pointer;
 }
 .post-title{
@@ -1299,5 +1232,282 @@ body{
 
 
 
+/* coin block style */
+
+.coin-icon{
+    max-width: 31px;
+    margin: 5px 0px;
+    width: 100%;
+}
+.coin-div{
+    max-width: 200px;
+    width: 100%;
+    height: 109px;
+    border: 3px solid rgb(0, 255, 255);
+    background-color: rgba(0, 0, 0, 0.314);
+    margin: 35px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.coin-div:hover{
+    background-color: rgba(0, 255, 255, 0.358);
+    box-shadow:  0px 5px 20px rgba(0, 255, 255, 0.618);
+}
+.coin-title{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
 
 
+/* Style page 2 - Service */
+.portfolio-block{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px auto;
+}
+.portfolio-div{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px 50px 200px 200px;
+    
+    background-color:  rgba(69, 255, 218, 0.531);
+    opacity: 70%;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+.portfolio-div:hover{
+    opacity: 100%;
+    box-shadow: 0px 5px 30px rgba(0, 255, 221, 0.97);
+    cursor: pointer;
+}
+.portfolio-img{
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transform: scale(0.95);
+	transition: .3s ease-in-out;
+}
+.portfolio-img:hover{
+    transform: scale(1);
+}
+.portfolio-item-title{
+    font-weight: 900;
+    font-size: 20px;
+}
+.delete-portfolio-button{
+    border-radius: 8px;
+    border: none;
+    margin: 20px auto 20px auto;
+    height: 30px;
+    width: 100px;
+    background-color: #00000053;
+    color: white;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    font-family: 'Comfortaa';    
+}
+.delete-portfolio-button:hover{
+    background-color:#070707a5;
+    box-shadow: 0px 0px 15px #1212128a;
+}
+.service-card{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 750px;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.96);
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px rgb(219, 194, 192);
+    display: none;
+}
+
+/* style add new Portfolio*/
+.add-portfolio-icon{
+    max-width: 250px;
+    width: 100%;
+    height: 80px;
+    margin: 20px auto;
+    background-color:#bda89e00; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    box-shadow: 0px 2px 10px 0px rgb(2, 255, 251);
+    cursor: pointer;
+    border: solid;
+    border-radius: 25px;
+    border-color:rgb(127, 238, 255);
+    border-width: 3px;
+    transition: 0.3s;
+}
+.add-portfolio-icon:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px rgb(0, 255, 229);
+}
+.portfolio-describe{
+    word-break: break-all;
+    padding-left: 10px;
+    padding-right: 13px;
+}
+
+/* Style form */
+.portfolio-form-block{
+    display: none;
+}
+.service-form{
+    max-width: 500px;
+    width: 100%;
+    position: fixed;
+    top: 8%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(27, 30, 52, 0.973);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #377eaa;
+    z-index: 3;
+}
+.newservice-title{
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.horizontal-line{
+    max-width: 500px;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.573);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.703);
+    margin-bottom: 10px;
+    padding: 0;
+}
+.closesave-buttons {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: right;
+}
+input[type="text"], textarea,
+input[type="email"]{
+    font-family: 'Comfortaa';
+
+}
+#service-title{
+    outline: none;
+    border: none;
+    border-bottom: 0px solid  rgb(146, 145, 145);
+    margin-top: 8px;
+}
+#service-description{
+    outline: none;
+    border: 1px solid  rgb(0, 0, 0);
+    margin-top: 10px;
+    height: 70px;
+}
+.span-error{
+    margin: 15px;
+    color: rgb(255, 86, 86);
+}
+input[type=file]::file-selector-button {
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: #5081cba1;
+    transition: 1s;
+    cursor: pointer;
+    font-family: 'Comfortaa';
+    color: #afdbff;
+}
+input[type=file]::file-selector-button:hover{
+    background-color: #c6bdd5c8;
+    color: #afdbff;
+}
+.close-portfolio-button,
+.save-portfolio-button{
+    margin: 0px 10px 0px 10px;
+    border: #bda89e;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 1s;
+    background-color: #3d8acdcc;
+    font-family: 'Comfortaa';
+    color: #afdbff;
+}
+
+.close-portfolio-button:hover{
+    background-color: #c6bdd5c8;
+    color: #ffffff;
+}
+.save-portfolio-button:hover{
+    background-color:  #c6bdd5c8;
+    color: #ffffff;
+}
+
+.active-post{
+    display: block;
+}
+
+
+/* 11111111111111111111 */
+form {
+    width: 400px;
+    margin: 50px auto;
+}
+
+.title-input {
+    display: block;
+    width: 400px;
+    padding: 8px 12px 10px 12px;
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 15px;
+    background: rgba(79, 113, 175, 0.417);
+    outline-style: dotted;
+    outline-width: 0.1px;
+    outline-color: #00d0ff;
+    
+}
+  
+textarea {
+    display: block;
+    width: 400px;
+    height: 150px;
+    margin: 0 0 20px;
+    padding: 8px 12px 10px 12px;
+    border: 0px solid rgba(0,0,0,.5);
+    border-radius: 15px;
+    background: rgba(79, 113, 175, 0.417);
+    outline: none;
+}
+.titleLabel,
+.file-select{
+    margin-bottom: 10px;
+}
+  

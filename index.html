@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
@@ -67,148 +69,98 @@
                 <h2 id ="sectionOneTitle" class="title-investy">InvestyZone</h2>
                 <div class="accordion-div ">
                     <h2 class="accordion-title">Cryptocurrency</h2>
+                    <img class="investy-img" src="img/btc-covid.jpg" alt="btc">
                     <p class="accordion-text">Cryptocurrency is digital money. This type of currency uses blockchain technology, which is considered secure because it is capable of establishing distributed consensus even among untrustworthy parties.</p>
                 </div>
                 <div class="accordion-div">
                     <h2 class="accordion-title">Stocks</h2>
+                    <img class="investy-img" src="img/stockchart.jpg" alt="stockchart">
                     <p class="accordion-text">Investing in stocks means buying shares of ownership in a public company. Those small shares are known as the company’s stock, and by investing in that stock, you’re hoping the company grows and performs well over time. </p>
                 </div>
                 <div class="accordion-div">
                     <h2 class="accordion-title">NFT</h2>
+                    <img class="investy-img" src="img/nft.png" alt="nft">
                     <p class="accordion-text">NFTs are digital assets that act as secure documentation of ownership and can be a worthwhile investment for collectors. They can also be risky. Learn how to create, buy, and sell NFTs.</p>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="sectionTwo" class="section-two">
-        <div class="crypto-div">
-            <h2 class="sectionTwo-title">Cryptocurrency</h2>
-            <div class="crypto-main-block">
-                <div class="table-titles">
-                    <h4>Coin Name</h4>
-                    <h4>Market Cap</h4>
-                    <h4>Perf Year</h4>
-                    <h4>Chart Year</h4>
-                </div>
-                <div class="crypto-block">
-                    <img class="crypto-logo" src="img/btc.png" alt="btc-img">
-                    <h3 class="crypto-name">Bitcoin BTC</h3>
-                    <p class="btc-mktcap">$562 B</p>
-                    <p class="btc-change">-18.88%</p>
-                    <img class="crypto-chart" src="img/bitcoin.png" alt="btc-chart">
-                    <div class="view-div">
-                        <a href="https://www.tradingview.com/symbols/BTCUSD/" target="_blank" class="view-text">View price</a>
-                    </div>
-                </div>
-                <div class="crypto-block">
-                    <img class="crypto-logo" src="img/eth.png" alt="btc-img">
-                    <h3 class="crypto-name">Ethereum ETH</h3>
-                    <p class="eth-mktcap">$212 B</p>
-                    <p class="eth-change">-36.56%</p>
-                    <img class="crypto-chart" src="img/etherium.png" alt="btc-chart">
-                    <div class="view-div">
-                        <a href="https://www.tradingview.com/symbols/ETHUSDT/" target="_blank" class="view-text">View price</a>
-                    </div>
-                </div>
-                <div class="crypto-block">
-                    <img class="crypto-logo" src="img/xrp-logo.png" alt="btc-img">
-                    <h3 class="crypto-name">Ripple XRP</h3>
-                    <p class="xrp-mktcap">$18 B</p>
-                    <p class="xrp-change">-59.26%</p>
-                    <img class="crypto-chart" src="img/xrp.png" alt="btc-chart">
-                    <div class="view-div">
-                        <a href="https://www.tradingview.com/symbols/XRPUSD/" target="_blank" class="view-text">View price</a>
-                    </div>
-                </div>
+
+        <div class="investy-info-block">
+            
+            <div class="investy-info-div">
+                
+                <h5>Investing In Cryptocurrency</h5>
+                <hr class="line">
+            </div>
+            <div class="investy-info-div">
+                
+                <h5>Investing In Stocks</h5>
+                <hr class="line">
+            </div>
+            <div class="investy-info-div">
+                
+                <h5>Investing In NFT</h5>
+                <hr class="line">
             </div>
         </div>
     </section>
-    <section id="sectionThree" class="section-three">
-        <h2 id="sectionThree-title" class="sectionThree-title">Stocks and Shares</h2>
-        <div class="chart-container">
-            <div class="stock-div">  
-                <div class="stock-block">
-                    <h3 class="stock-title">AAPL</h3>
-                    <ul class="stock-info">
-                        <li class="stock-li">
-                            <p class="stock-text">Market Cap: </p>
-                            <p class="apple num"> 2,447.36B </p> 
-                        </li>
-                        <li class="stock-li">
-                            <p class="stock-text">Income:  </p>
-                            <p class="apple num"> 101.94B</p>
-                        </li>
-                        <li class="stock-li">
-                            <p class="stock-text">Sales:</p>
-                            <p class="apple num"> 386.02B </p>
-                        </li>
-                    </ul>
-                    <img class="chart-img" src="img/appl-chart.png" alt=""> 
+    <section id="sectionTwo" class="section-two">
+            
+        </div>
+    </section class="coin-section">
+        <div class="coin-section-div">
+            <div class="coin-block">
+                <div class="coin-div"> 
+                    <h2 class="coin-title">BTC</h2>
+                    <img class="coin-icon" src="img/bitcoinn.png" alt="bitcoin-img">
+                    <h3> $ <span id="bitcoin"></span> </h3>
                 </div>
-                <div class="stock-block">
-                    <h3 class="stock-title">TSLA</h3>
-                    <ul class="stock-info">
-                        <li class="stock-li">
-                            <p class="stock-text">Market Cap: </p>
-                            <p class="tesla num"> 2447.36B </p> 
-                        </li>
-                        <li class="stock-li">
-                            <p class="stock-text">Income:  </p>
-                            <p class="tesla num"> 101.94B</p>
-                        </li>
-                        <li class="stock-li">
-                            <p class="stock-text">Sales:</p>
-                            <p class="tesla num"> 386.02B </p>
-                        </li>
-                    </ul>
-                    <img class="chart-img" src="img/tesla-chart.png" alt=""> 
+                <div class="coin-div"> 
+                    <h2 class="coin-title">ETH </h2>
+                    <img class="coin-icon" src="img/ethereumm.png" alt="ethereum-img">
+                    <h3> $ <span id="ethereum"></span> </h3>
                 </div>
-                <div class="stock-block">
-                    <h3 class="stock-title">NTLX</h3>
-                    <ul class="stock-info">
-                        <li class="stock-li">
-                            <p class="stock-text">Market Cap: </p>
-                            <p class="netflix num"> 2447.36B </p> 
-                        </li>
-                        <li class="stock-li">
-                            <p class="stock-text">Income:  </p>
-                            <p class="netflix num"> 101.94B</p>
-                        </li>
-                        <li class="stock-li">
-                            <p class="stock-text">Sales:</p>
-                            <p class="netflix num"> 386.02B </p>
-                        </li>
-                    </ul>
-                    <img class="chart-img" src="img/netflix-chart.png" alt=""> 
+                <div class="coin-div">
+                    <h2 class="coin-title">DOGE </h2> 
+                    <img class="coin-icon" src="img/dogecoin.png" alt="doge-img">
+                    <h3> $ <span id="dogecoin"></span> </h3>
+                </div>
+                <div class="coin-div">
+                    <h2 class="coin-title">Litecoin </h2> 
+                    <img class="coin-icon" src="img/litecoin.png" alt="lite-img">
+                    <h3> $ <span id="litecoin"></span> </h3>
+                </div>
+                <div class="coin-div">
+                    <h2 class="coin-title">Stellar </h2>
+                    <img class="coin-icon" src="img/stellar.png" alt="stellar-img"> 
+                    <h3> $ <span id="stellar"></span> </h3>
+                </div>
+                <div class="coin-div">
+                    <h2 class="coin-title">Solana </h2>
+                    <img class="coin-icon" src="img/solana.png" alt="solana-img">  
+                    <h3> $ <span id="solana"></span> </h3>
                 </div>
             </div>
-            <div class="pie-chart">
-                <div class="countries-main-div">
-                    <div class="countries-block">
-                        <div class="country purple"></div>
-                        <p class="country-text">USA</p>
-                    </div>
-                    <div class="countries-block">
-                        <div class="country red"></div>
-                        <p class="country-text">Japan</p>
-                    </div>
-                    <div class="countries-block">
-                        <div class="country green"></div>
-                        <p class="country-text">UK</p>
-                    </div>
-                    <div class="countries-block">
-                        <div class="country orange"></div>
-                        <p class="country-text">China</p>
-                    </div>
-                    <div class="countries-block">
-                        <div class="country yellow"></div>
-                        <p class="country-text">Other</p>
-                    </div>                   
-                </div>
+        </div>
+    <section>
+        
 
-                <div>
-                    <img class="donut-chart-img" src="img/donut-chart.png" alt="">
-                </div>   
+    </section>
+    <section id="sectionThree" class="section-three">
+        <h2 id="sectionThree-title" class="sectionThree-title">Stocks and Shares</h2>
+
+        
+        <div class="chart-container">
+            <div class="chart-linear-block">
+
+                <canvas id="myChart" class="chart-linear"></canvas>
+                <canvas id="myChartTwo" class="chart-linear"></canvas>
+                <canvas id="myChartThree" class="chart-linear"></canvas>
+            </div>
+
+            <canvas id="myChartDonut" class="chart-donut" ></canvas>
+            
+            <div class="pie-chart">
             </div>
 
         </div>
@@ -411,6 +363,63 @@
             </div>
             <Button class="saveButton" id="saveButton" >Send</Button>
         </form>
+
+        <!-- ეს არის დამატება რომ შეეძლოს მომხმარებელს თავისი პორთფოლიოსი -->
+
+        <div class="add-own-portfolio-block">
+            <div class="add-portfolio-icon" id="add-portfolio-icon">Investment Portfolio</div>
+            <div class="portfolio-block" id="portfolio-block">
+                <div class="portfolio-div" id="portfolio-div-1">
+                    <img src="img/row-1.jpg" alt="img" class="portfolio-img">
+                    <h2 class="portfolio-item-title"> Investment Postfolio One</h2>
+                    <h2 class="portfolio-item-title"> S & P 500</h2>
+                    <h2 class="portfolio-item-title"> Ntflx</h2>
+                    <p class="portfolio-describe">APPL</p>
+                    <button class="delete-portfolio-button" id="static-delete-button-1">Delete Portfolio</button>
+                </div>
+                <div class="portfolio-div" id="portfolio-div-2">
+                    <img src="img/row-3.jpg" alt="img-georgian-memory" class="portfolio-img">
+                    <h2 class="portfolio-item-title">Stock Two</h2>
+                    <h2 class="portfolio-item-title"> Daw Jones</h2>
+                    <h2 class="portfolio-item-title"> Ntflx</h2>
+                    <p class="portfolio-describe">Microsoft</p>
+                    <button class="delete-portfolio-button static-delete-button" id="static-delete-button-2">Delete Portfolio</button>
+                </div>
+            </div>
+            <div class="portfolio-form-block" id="portfolio-form-block"> 
+                <form action="" method="POST" class="service-form" id="service-form">
+                    <h3 class="newservice-title" >Create Your Own or Portfolio</h3>
+                    <div class="close-icon" id="close-form"> <i class="fa-solid fa-xmark"> </i></div>
+    
+                    <label for="portfolioTitle" class="titleLabel">*Stock Title</label>
+                    <input type="text" class="title-input" id="portfolio-item-title" name="portfolioTitle" placeholder="Stock 1" >
+                    <span  class="span-error" id="error_portfolioTitle"></span>
+    
+                    <label for="portfolioTitle" class="titleLabel">*Stock Title</label>
+                    <input type="text" class="title-input" id="portfolio-item-title2" name="portfolioTitle" placeholder="Stock 2">
+                    <span  class="span-error" id="error_portfolioTitle2"></span>
+    
+                    <label for="portfolioTitle" class="titleLabel">*Stock Title</label>
+                    <input type="text" class="title-input" id="portfolio-item-title3" name="portfolioTitle" placeholder="Stock 3">
+                    <span  class="span-error" id="error_portfolioTitle3"></span>
+                  
+                    <label for="service-description" class="service-description"> *Stock Description</label>
+                    <textarea name="serviceDescription" class="description-input" id="service-description" placeholder="Stock 4"></textarea>
+                    <span  class="span-error" id="error_serviceDescription"></span>
+    
+                    <label for="myfile" class="file-select";>*Select a file:</label>
+                    <input type="file" id="img-input" name="myfile" class="img-input">
+                    <span  class="span-error" id="error_myfile"></span>
+                    
+                    <div class="closesave-buttons" class="">
+                        <Button class="close-portfolio-button" id="close-portfolio-button">Close</Button>
+                        <Button class="save-portfolio-button" id="save-portfolio-button">Save Changes</Button>
+                    </div> 
+                </form>
+            </div>
+        </div>
+        <!-- 1212121 -->
+
     </section>
 
     <footer class="footer">
@@ -431,24 +440,24 @@
                 </div>
             </div>
             <div class="footer-right-block">
-                <div class="right-text-block">
+                <ul class="right-text-block">
                     <h3 class="title-footer">Useful links</h3>
-                    <p class="p-text">Money Investing</p>
-                    <p class="p-text">Cryptocurrency</p>
-                    <p class="p-text">Stocks</p>
-                    <p class="p-text">NFT</p>
-                </div>
-                <div class="right-text-block">
+                    <li class="p-text">Money Investing</li>
+                    <li class="p-text">Cryptocurrency</>
+                    <li class="p-text">Stocks</li>
+                    <li class="p-text">NFT</>
+                </ul>
+                <ul class="right-text-block">
                     <h3 class="title-footer">Privacy</h3>
-                    <p class="p-text">Home</p>
-                    <p class="p-text">Contact Us</p>
-                </div>
-                <div class="right-text-block">
+                    <li class="p-text">Home</li>
+                    <li class="p-text">Contact Us</li>
+                </ul>
+                <ul class="right-text-block">
                     <h3 class="title-footer">Contact Info</h3>
-                    <p class="p-block email-before">example@gmail.com</p>
-                    <p class="p-block phone-before">+0 32 777 777</p>
-                    <p class="p-block map-before">Main Str Chicago Ilinois</p>
-                </div>
+                    <li class="p-block email-before">example@gmail.com</li>
+                    <li class="p-block phone-before">+0 32 777 777</li>
+                    <li class="p-block map-before">Main Str Chicago Ilinois</li>
+                </ul>
             </div>
         </div>
         <div class="date-block" id="date-block">
