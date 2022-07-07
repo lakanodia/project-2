@@ -1431,10 +1431,13 @@ input[type="email"]{
     margin-top: 8px;
 }
 #service-description{
+    max-width: 400px;
+    width: 100%;
     outline: none;
     border: 1px solid  rgb(0, 0, 0);
     margin-top: 10px;
     height: 70px;
+
 }
 .span-error{
     margin: 8px;
@@ -1488,7 +1491,8 @@ form {
 
 .title-input {
     display: block;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     padding: 8px 12px 10px 12px;
     border: 1px solid rgba(0,0,0,.5);
     border-radius: 15px;
