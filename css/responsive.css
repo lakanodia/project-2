@@ -93,7 +93,7 @@
         align-items: center;
     }
     .chart-donut{
-        max-width: 860px;
+        max-width: 850px;
         width: 100%;
     }
 }
@@ -222,7 +222,15 @@
     
 }
 
-@media (max-width:500px){
+@media (max-width:530px){
+
+    .chart-linear{
+        max-width: 450px;
+        width: 100%;
+    }
+}
+
+@media (max-width:510px){
     .sectionTwo-title{
         left: 22%;
     }
@@ -241,11 +249,50 @@
     .view-post{
         font-size: 20px;
     }
-    .chart-donut{
-        max-width: 400px;
+}
+@media (max-width:480px){
+    .chart-linear{
+        max-width: 380px;
         width: 100%;
     }
 }
+@media (max-width:465px){
+    .chart-linear{
+        max-width: 360px;
+        width: 100%;
+    }
+    .chart-donut{
+        max-width: 340px;
+        width: 100%;
+    }
+}
+@media (max-width:450px){
+    .chart-linear{
+        max-width: 300px;
+        width: 100%;
+    }   
+}
+@media (max-width:395px){
+    .chart-linear{
+        max-width: 350px;
+        width: 100%;
+    }
+}
+@media (max-width:360px){
+    .chart-linear{
+        max-width: 330px;
+        width: 100%;
+    }
+}
+@media (max-width:335px){
+    .chart-linear{
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+
+
 
 
 
