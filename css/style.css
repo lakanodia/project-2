@@ -5,7 +5,7 @@ body{
     background: -o-linear-gradient(bottom, rgb(33, 38, 56) 0%, rgb(35, 35, 56) 100%);
     background: linear-gradient(0deg, rgb(25, 33, 58) 0%, rgb(19, 19, 60) 100%);
 }
-.style{
+style{
     text-shadow: 0px 3px 10px #00d0ff;
     color: #00d0ff;
     font-size: 55px;
@@ -13,8 +13,12 @@ body{
 .investy-info-block{
     max-width: 1100px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
 }
 .investy-info-div{
@@ -27,7 +31,8 @@ body{
     margin-bottom: 15px;
     border: 3px solid #00d0ff;
     border-radius: 2px;
-    box-shadow: 0px 2px 30px black;
+    -webkit-box-shadow: 0px 2px 30px black;
+            box-shadow: 0px 2px 30px black;
     opacity: 70%;
     text-align: center;
 }
@@ -45,12 +50,14 @@ body{
 .investy-img{
     width: 100%;
     height: 80px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .investy-img2{
     width: 100%;
     height: 180px;
-    object-fit: cover; 
+    -o-object-fit: cover;
+       object-fit: cover; 
 }
 /* Header navigation */
 .logo-icon{
@@ -153,8 +160,6 @@ body{
          -o-transition-delay: 0s;
             transition-delay: 0s;
 }
-
-
 .nav-ul{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -213,8 +218,7 @@ body{
     text-align: center;
 }
 
-.title-banner
-{
+.title-banner{
     text-transform: uppercase;
     background-image: -o-linear-gradient(
     315deg,
@@ -236,7 +240,7 @@ body{
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: rgb(0, 255, 238)
+  color: rgb(0, 255, 238);
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -511,7 +515,6 @@ body{
 }
 
 /* section three information abouts stocks */
-
 .chart-linear{
     max-width: 500px;
     width: 100%;
@@ -526,22 +529,26 @@ body{
 .chart-linear-block{
     max-width: 1500px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 auto;
 }
 .trading-block{
     max-width: 1000px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 50px auto;
 }
 .container{
     margin-right: 20px;
 }
-
-
 /* NFT */
 .top-nft-title{
     font-size: 25px;
@@ -1247,22 +1254,34 @@ body{
 .coin-div{
     max-width: 200px;
     width: 100%;
-    height: 109px;
+    height: 100px;
     border: 3px solid rgb(0, 255, 255);
     background-color: rgba(0, 0, 0, 0.314);
     margin: 35px;
     border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: white;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     cursor: pointer;
 }
 .coin-div:hover{
     background-color: rgba(0, 255, 255, 0.358);
-    box-shadow:  0px 5px 20px rgba(0, 255, 255, 0.618);
+    -webkit-box-shadow:  0px 5px 20px rgba(0, 255, 255, 0.618);
+            box-shadow:  0px 5px 20px rgba(0, 255, 255, 0.618);
 }
 .coin-title{
     font-size: 20px;
@@ -1274,41 +1293,67 @@ body{
 .portfolio-block{
     max-width: 900px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 60px auto;
 }
 .portfolio-div{
     max-width: 400px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     color: white;
     border-radius: 10px 50px 200px 200px;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(182, 81, 193)), color-stop(97%, rgb(53, 48, 152)));
+    background: -o-linear-gradient(left, rgb(182, 81, 193) 0%, rgb(53, 48, 152) 97%);
     background: linear-gradient(90deg, rgb(182, 81, 193) 0%, rgb(53, 48, 152) 97%);
     opacity: 70%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     margin-bottom: 50px;
 }
 .portfolio-div:hover{
     opacity: 100%;
-    box-shadow: 0px 5px 30px rgba(103, 154, 202, 0.97);
+    -webkit-box-shadow: 0px 5px 30px rgba(103, 154, 202, 0.97);
+            box-shadow: 0px 5px 30px rgba(103, 154, 202, 0.97);
     cursor: pointer;
 }
 .portfolio-img{
     width: 40%;
     height: 100px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 8px;
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
+	-webkit-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 .portfolio-img:hover{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 .portfolio-item-title{
     font-weight: 900;
@@ -1322,14 +1367,18 @@ body{
     width: 100px;
     background-color: #00000053;
     color: white;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     cursor: pointer;
+    -webkit-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     font-family: 'Comfortaa';    
 }
 .delete-portfolio-button:hover{
     background-color:#070707a5;
-    box-shadow: 0px 0px 15px #1212128a;
+    -webkit-box-shadow: 0px 0px 15px #1212128a;
+            box-shadow: 0px 0px 15px #1212128a;
 }
 .service-card{
     position: fixed;
@@ -1342,7 +1391,8 @@ body{
     height: 350px;
     background-color: rgba(0, 0, 0, 0.96);
     border-radius: 7px;
-    box-shadow: 0px 0px 30px rgb(219, 194, 192);
+    -webkit-box-shadow: 0px 0px 30px rgb(219, 194, 192);
+            box-shadow: 0px 0px 30px rgb(219, 194, 192);
     display: none;
 }
 
@@ -1354,23 +1404,35 @@ body{
     margin: 20px auto;
     background-color:#bda89e00; 
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #ffffff;
     font-size: 20px;
     font-weight: 900;
-    box-shadow: 0px 2px 10px 0px rgb(2, 183, 255);
+    -webkit-box-shadow: 0px 2px 10px 0px rgb(2, 183, 255);
+            box-shadow: 0px 2px 10px 0px rgb(2, 183, 255);
     cursor: pointer;
     border: solid;
     border-radius: 25px;
     border-color:rgb(127, 214, 255);
     border-width: 3px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .add-portfolio-icon:hover{
-    transform: translateY(-2px);
-    box-shadow: 0px 10px 20px 2px rgb(36, 197, 255);
+    -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+            transform: translateY(-2px);
+    -webkit-box-shadow: 0px 10px 20px 2px rgb(36, 197, 255);
+            box-shadow: 0px 10px 20px 2px rgb(36, 197, 255);
 }
 .portfolio-describe{
     word-break: break-all;
@@ -1391,9 +1453,16 @@ body{
     right: 0;
     margin: 0 auto;
     background: rgba(27, 30, 52, 0.973);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 20px;
     border-radius: 5px;
     font-size: 12px;
@@ -1409,15 +1478,20 @@ body{
     max-width: 500px;
     width: 100%;
     border-bottom: 2px solid rgba(0, 0, 0, 0.573);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.703);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.703);
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.703);
     margin-bottom: 10px;
     padding: 0;
 }
 .closesave-buttons {
     width: 100%;
     height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
 }
 input[type="text"], textarea,
 input[type="email"]{
@@ -1437,20 +1511,36 @@ input[type="email"]{
     border: 1px solid  rgb(0, 0, 0);
     margin-top: 10px;
     height: 70px;
-
 }
 .span-error{
     margin: 8px;
     color: rgb(255, 86, 86);
+}
+input[type=file]::-webkit-file-upload-button {
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: #5081cba1;
+    -webkit-transition: 1s;
+    transition: 1s;
+    cursor: pointer;
+    font-family: 'Comfortaa';
+    color: #afdbff;
 }
 input[type=file]::file-selector-button {
     height: 30px;
     border: none;
     border-radius: 7px;
     background-color: #5081cba1;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     cursor: pointer;
     font-family: 'Comfortaa';
+    color: #afdbff;
+}
+input[type=file]::-webkit-file-upload-button:hover{
+    background-color: #c6bdd5c8;
     color: #afdbff;
 }
 input[type=file]::file-selector-button:hover{
@@ -1463,6 +1553,8 @@ input[type=file]::file-selector-button:hover{
     border: #bda89e;
     border-radius: 7px;
     cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     background-color: #3d8acdcc;
     font-family: 'Comfortaa';
@@ -1528,7 +1620,4 @@ textarea {
 .chart-color{
     color: #087891;
     font-weight: 900;
-}
-.coin-block{
-    position: absolute;
 }
