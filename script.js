@@ -634,20 +634,20 @@ function validateForm() {
     let errors = {};
      // validation in the name of the service is a maximum of 25 characters
     let portfolioTitle = document.querySelector('#portfolio-item-title').value;
-    if (portfolioTitle.length>25 || portfolioTitle==''){
-        errors.portfolioTitle = 'Title can not be empty and can not be more than 25 symbols';
+    if (portfolioTitle.length>30 || portfolioTitle==''){
+        errors.portfolioTitle = 'Title can not be empty and can not be more than 30 symbols';
     }
     
     // validation in the name of the service is a maximum of 25 characters
     let portfolioTitle2 = document.querySelector('#portfolio-item-title2').value;
-    if (portfolioTitle2.length>25 || portfolioTitle2==''){
-        errors.portfolioTitle2 = 'Title can not be empty and can not be more than 25 symbols';
+    if (portfolioTitle2.length>30 || portfolioTitle2==''){
+        errors.portfolioTitle2 = 'Title can not be empty and can not be more than 30 symbols';
     }
 
     // validation in the name of the service is a maximum of 25 characters
     let portfolioTitle3 = document.querySelector('#portfolio-item-title3').value;
-    if (portfolioTitle3.length>25 || portfolioTitle3==''){
-        errors.portfolioTitle3 = 'Title can not be empty and can not be more than 25 symbols';
+    if (portfolioTitle3.length>30 || portfolioTitle3==''){
+        errors.portfolioTitle3 = 'Title can not be empty and can not be more than 30 symbols';
     }
 
     // validation service description maximum  100 symbols  
