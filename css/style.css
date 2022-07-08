@@ -1511,6 +1511,7 @@ input[type="email"]{
     border: 1px solid  rgb(0, 0, 0);
     margin-top: 10px;
     height: 70px;
+    color: #06acff;
 }
 .span-error{
     margin: 8px;
