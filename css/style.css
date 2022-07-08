@@ -5,7 +5,7 @@ body{
     background: -o-linear-gradient(bottom, rgb(33, 38, 56) 0%, rgb(35, 35, 56) 100%);
     background: linear-gradient(0deg, rgb(25, 33, 58) 0%, rgb(19, 19, 60) 100%);
 }
-style{
+.style{
     text-shadow: 0px 3px 10px #00d0ff;
     color: #00d0ff;
     font-size: 55px;
