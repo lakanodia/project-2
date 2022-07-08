@@ -346,14 +346,12 @@ body{
     font-weight: 900;
     cursor: pointer;
 }
-
 .accordion-body{
     margin-top: 100px;
 }
 .section-one{
     margin-bottom: 150px;
 }
-
 /* section two - information about crypto */
 .sectionTwo-title{
     letter-spacing: 10px;
@@ -469,8 +467,6 @@ body{
     font-weight: 900;
     text-shadow: 0px 0px 15px rgb(152, 216, 255);
 }
-
-
 .view-div{
     border: 15px 15px 15px white;
     cursor: pointer;
@@ -1027,7 +1023,6 @@ body{
     cursor: pointer;    
 }
 
-
 /* footer */
 .footer-left-block{
     max-width: 300px;
@@ -1242,8 +1237,6 @@ body{
     line-height: 40px;
   }
 
-
-
 /* coin block style */
 
 .coin-icon{
@@ -1287,7 +1280,6 @@ body{
     font-size: 20px;
     margin-bottom: 5px;
 }
-
 
 /* Style page 2 - Service */
 .portfolio-block{
@@ -1575,8 +1567,6 @@ input[type=file]::file-selector-button:hover{
     display: block;
 }
 
-
-/* 11111111111111111111 */
 form {
     width: 400px;
     margin: 50px auto;
